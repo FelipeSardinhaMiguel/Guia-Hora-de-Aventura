@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    padding: 10px; /*para não ficar colado no topo (por causa que mexeu no body)*/
+}
+
+/* Container que vai ocupar todo o espaço restante e centralizar a imagem */
+.imagemDiv {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem na horizontal */
+    align-items: center;     /* Centraliza a imagem na vertical */
+    flex-grow: 1;            /* Ocupa o espaço livre entre o link e os outros componentes */
+}
+
+/*Mantém a imagem com um tamanho controlado*/
+/*.imagemDiv img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}*/
+
+.sinopse {
+    padding: 20px;
+    text-align: center;
+}
