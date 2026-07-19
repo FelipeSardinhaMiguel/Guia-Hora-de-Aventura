@@ -1,0 +1,78 @@
+body
+{
+  background-color: greenyellow;
+}
+
+ul
+{
+  list-style-type: none;  /*Isso serve para que as bolinhas de marcação da lista sumam*/
+  margin: 0;  /*N entendi oq isso faz, só fez a barra ficar mais pra cima*/
+  padding: 0; /*Faz com que n tenha espaço entre o lado esquerdo da barra e o primeiro item*/
+  background-color: #41c2d5;  /*Cor da menu bar*/
+  display: flex;  /*Sem isso a barra ficou vertical*/
+}
+
+nav ul li
+{
+  margin: 0;
+}
+
+nav ul li a
+{
+  display: block; /*Deixa o link da lista em fomato de bloco, sem ele a barra fica pequena*/
+  padding: 14px 20px; /*Deixou os links pequenos e juntos*/
+  color: white; /*Os links ficam brancos*/
+  text-decoration: none;  /*Tira a decoração do texto*/
+}
+
+nav ul li a:hover /*É a seleção do item quando passa o mouse por cima*/
+{
+  background-color: #111;
+}
+
+.legal
+{
+  display: flex;
+  gap: 100px; /*Espaçamento horizontal entre os conteiners*/
+}
+
+a
+{
+  text-decoration: none; /*Deixa o link sem o sublinhado  */
+  color: deeppink;
+}
+
+a:hover
+{
+  color: red;            /* muda a cor quando passa o mouse */
+  text-decoration: underline;
+}
+
+/*a:visited
+{
+  color: purple;          cor do link já visitado 
+}*/
+
+/*a:active
+{
+  color: green;           cor quando o link está sendo clicado 
+}*/
+
+.logo
+{
+  display: block; /*Isso transforma a minha imagem em um bloco*/
+  margin: 0 auto; /*E isso fez o meu bloco ficar sem a margem*/
+}
+
+.suco
+{
+  gap: 50px;
+  display: flex;
+  justify-content: center; /*Centraliza o conteudo?????????????*/
+  text-align: center; /*Centraliza o texto*/
+}
+
+.refri
+{
+  list-style-type: none; /*Remove a numeração da lista*/
+}
