@@ -1,0 +1,32 @@
+/* 1. Estilização do contêiner do vídeo */
+.divideo {
+  position: relative;
+  width: 560px;          /* Largura do player/imagem */
+  height: 315px;         /* Altura proporcional (16:9) */
+  border-radius: 8px;    /* Bordas levemente arredondadas */
+  overflow: hidden;      /* Garante que nada saia do contêiner */
+  background-color: #000;/* Fundo preto enquanto o vídeo carrega */
+  cursor: pointer;
+}
+
+/* 2. Estilização da Imagem (Capa/Thumbnail) */
+.divideo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* Ajusta a imagem sem distorcer */
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+/* Efeito sutil ao passar o mouse antes do hover carregar */
+.divideo:hover img {
+  opacity: 0.9;
+}
+
+/* 3. Estilização do Iframe do YouTube */
+.divideo iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: none;         /* Inicia ESCONDIDO por padrão */
+}
