@@ -2,3 +2,44 @@ body
 {
   background-color: greenyellow;
 }
+
+.episodios-grid
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  list-style-type: none;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.episodio
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.episodio img
+{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.episodio h1
+{
+  font-size: 1.2rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.episodio p
+{
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-top: 0;
+}
