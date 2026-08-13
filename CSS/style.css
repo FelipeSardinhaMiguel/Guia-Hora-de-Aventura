@@ -1,10 +1,9 @@
-body
-{
+body {
   background-color: greenyellow;
 }
 
-.episodios-grid
-{
+/* Grade Principal (2 colunas) */
+.episodios-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
@@ -14,31 +13,52 @@ body
   margin: 0 auto;
 }
 
-.episodio
-{
+.episodio {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.episodio img
-{
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
 }
 
-.episodio h1
-{
+/* Contêiner da Imagem/Vídeo: Ocupa a largura inteira da coluna com proporção 16:9 */
+.divideo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;      /* Mantém a proporção padrão de vídeo em qualquer tela */
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 10px;
+  background-color: #000;
+}
+
+/* Estilo unificado para Imagens e Vídeo */
+.divideo img, 
+.divideo iframe,
+.episodio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+  border-radius: 8px;
+}
+
+.divideo img {
+  display: block;
+}
+
+.divideo iframe {
+  display: none;             /* Escondido até o hover */
+}
+
+/* Estilização dos Textos */
+.episodio h1 {
   font-size: 1.2rem;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.episodio p
-{
+.episodio p {
   font-size: 0.95rem;
   line-height: 1.4;
   margin-top: 0;
