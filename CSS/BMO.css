@@ -69,3 +69,104 @@
     position: absolute;
     bottom: 18px;
 }
+
+/*container do chat*/
+
+.bmoContainer
+{
+    display: none;
+    position: fixed;
+    bottom: 110px;
+    right: 20px;
+    width: 320px;
+    height: 420px;
+    background-color: #5bb39d;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1000;
+    font-family: sans-serif;
+}
+
+.bmoHeader
+{
+    background-color: #3d8070;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bmoHeader button
+{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.bmoMenssagens
+{
+    flex: 1;
+    padding: 12px;
+    background-color: #e3f7f0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*mensagem da IA (resposta do bmo)*/
+.bmoMenssagem
+{
+    background-color: #8edec6;
+    color: #1a3636;
+    align-items: flex-start;
+    max-width: 80%;
+    padding: 8px 12px;
+    border-radius: 10px 10px 10px 2px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/*mensagem do usuario(inserida via js)*/
+.userMenssagem
+{
+    background-color: #3d8070;
+    color: white;
+    align-self: flex-end;
+    max-width: 80%;
+    padding: 8px 12px;
+    border-radius: 10px 10px 2px 10px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.bmoInput{
+    display: flex;
+    padding: 10px;
+    background-color: #5bb39d;
+    gap: 8px;
+}
+
+.bmoInput input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #3d8070;
+    border-radius: 6px;
+    outline: none;
+}
+
+.bmoInput button {
+    background-color: #3d8070;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
